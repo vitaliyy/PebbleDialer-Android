@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="LanguageSmartwatch">Language Smartwatch</string>
+    <string name="lang">lang</string>
+    <string name="Language">Language</string>
+    <string name="LangDialogTitle">Choose language:</string>
+    <string name="LangTitle">Language</string>
+</resources>

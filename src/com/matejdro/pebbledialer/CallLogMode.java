@@ -114,7 +114,7 @@ public class CallLogMode extends DialerMode {
 		numberSet.clear();
 
 		ContentResolver resolver = service.getContentResolver();
-		String sortOrder = CallLog.Calls.DEFAULT_SORT_ORDER + " LIMIT 1000";
+		String sortOrder = CallLog.Calls.DEFAULT_SORT_ORDER + " LIMIT 20";
 		Cursor cursor = resolver.query(CallLog.Calls.CONTENT_URI, null, null, null, sortOrder);
 
 		while (cursor.moveToNext())
@@ -123,7 +123,7 @@ public class CallLogMode extends DialerMode {
 			if (numberSet.contains(number))
 				continue;
 
-			String name = PebbleUtil.prepareString(cursor.getString(cursor.getColumnIndex(CallLog.Calls.CACHED_NAME)), 16);
+			String name = PebbleUtil.prepareString(cursor.getString(cursor.getColumnIndex(CallLog.Calls.CACHED_NAME)), 30);
 			int type = cursor.getInt(cursor.getColumnIndex(CallLog.Calls.TYPE));
 			long date = cursor.getLong(cursor.getColumnIndex(CallLog.Calls.DATE));
 			int numberType = cursor.getInt(cursor.getColumnIndex(CallLog.Calls.CACHED_NUMBER_TYPE));

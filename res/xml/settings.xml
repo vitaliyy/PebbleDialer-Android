@@ -3,31 +3,40 @@
 
     <PreferenceCategory
         android:key="cat_dialer"
-        android:title="Dialer" >
+        android:title="@string/Dialler" >
         <Preference
             android:key="displayedGroups"
-            android:summary="Select which contact groups will be displayed on Pebble"
-            android:title="Displayed contact groups" />
+            android:summary="@string/DisplayedContactGroupsSummary"
+            android:title="@string/DisplayedContactGroups" />
 
         <CheckBoxPreference
             android:key="skipGroupFiltering"
-            android:summary="Should dialer skip filtering when you pick group instead of all contacts"
-            android:title="Skip filtering contact groups" />
+            android:summary="@string/SkipfilteringcontactgroupsSummary"
+            android:title="@string/Skipfilteringcontactgroups" />
         
                 <Preference
             android:key="help"
-            android:title="Help and Tips" />
+            android:title="@string/HelpAndTips" />
         
     </PreferenceCategory>
     <PreferenceCategory
         android:key="cat_call"
-        android:title="Call screen" >
+        android:title="@string/CallScreen" >
         <CheckBoxPreference
             android:key="launchGlance"
-            android:title="Launch glance after call" />
+            android:title="@string/launchGlance" />
         <CheckBoxPreference
             android:key="rootMode"
-            android:summary="Check this if some in-call features (like answer or mic mute) do not work for you. NEEDS ROOT!"
-            android:title="Root mode" />
+            android:summary="@string/RootModeSummary"
+            android:title="@string/RootMode" />
     </PreferenceCategory>
+    <PreferenceCategory android:title="@string/LangTitle" android:key="@string/lang">
+        <ListPreference android:key="lang"
+   android:title="@string/LangTitle"
+   android:entries="@array/entries_lang"
+   android:entryValues="@array/entryvalues_lang"
+   android:dialogTitle="@string/LangDialogTitle"  />
+        
+    </PreferenceCategory>
+    
 </PreferenceScreen>

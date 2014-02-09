@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <string name="Dialler">Звонилка</string>   
+ <string name="DisplayedContactGroups">"Отображаемые группы контактов"</string> 
+ <string name="DisplayedContactGroupsSummary">"Выбрать какие группы контактов будут отбражаться на Pebble"</string>
+ <string name="Skipfilteringcontactgroups">Не фильтровать группы контаков</string> 
+  <string name="SkipfilteringcontactgroupsSummary">Должна звонилка пропускать фильтрацию когда вы выбрали группу контактов</string>
+ <string name="HelpAndTips">Помощь и подсказки</string> 
+ <string name="CallScreen">Окно звонка</string> 
+ <string name="launchGlance">Запустить Glance после звонка</string> 
+ <string name="RootMode">Режим Root</string> 
+ <string name="RootModeSummary"> Используется для некоторых фукнций входящего звонка (ответ или отключение микрофона) которые не работают на вашем устройстве</string>
+</resources>

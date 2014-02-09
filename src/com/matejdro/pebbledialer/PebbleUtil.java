@@ -11,7 +11,7 @@ public class PebbleUtil {
 	
 	public static String prepareString(String text)
 	{
-		return prepareString(text, 20);
+		return prepareString(text, 30);
 	}
 	
 	public static String prepareString(String text, int length)
